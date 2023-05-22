@@ -1,0 +1,184 @@
+/* Fontes */
+@font-face {
+    font-family: Leguan Spartan;
+    src: url(fontes/LeagueSpartan-VariableFont_wght.ttf) format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: Android;
+    src: url(fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+}
+/* Variaveis em CSS */
+:root {
+    --cor0: black;
+    --cor1: white;
+    --cor2: #29132e;
+    --cor3: #8255af;
+    --cor4: #6b0322;
+    --cor5: #de004e;
+    --cor6: #f887ff;
+
+    --fonte-padrão: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque:'Leguan Spartan', Bold;
+    --fonte-android: 'Android', Bold; 
+}
+/* Margem */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/* Corpo do site */
+body {
+    background-color: var(--cor2);
+    font-family: var(--fonte-padrão);
+}
+
+/* Cabeça */
+header {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
+    background-color: var(--cor5);
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+}
+header > h1 {
+    color: var(--cor6);
+    font-family: var(--fonte-android);
+    font-size: 3em;
+    font-weight: normal;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(148, 111, 111);
+}
+header > p {
+    font-size: 1.2em;
+    font-family: var(--fonte-destaque);
+    color: var(--cor1);
+    max-width: 500px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgb(87, 81, 81);
+}
+/* Não lembro */
+nav {
+    background-color: var(--cor5);
+    box-shadow: 0px 7px 7px rgb(197, 158, 158);
+}
+nav > a {
+    color: var(--cor1);
+    padding: 1px;
+    border-radius: 2px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+nav > a:hover {
+    background-color: var(--cor6);
+    color: var(--cor5);
+}
+/* Conteudo do site */
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--cor1);
+    box-shadow: 0px 0px 10px rgb(172, 170, 170);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main h1 {
+    color: var(--cor3);
+    font-family: var(--fonte-destaque);
+    font-weight: bold;
+}
+main h2 {
+    color: var(--cor6);
+    font-family: var(--fonte-destaque);
+    font-weight: bold;
+    background-image: linear-gradient(to right, var(--cor5),transparent);
+    text-indent: 5px;
+}
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em; /* Espaçamento entre as linhas */
+}
+main strong {
+    color: var(--cor2);
+    font-weight: bold;
+    background-color: var(--cor6);
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+main a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--cor4);
+    background-color: var(--cor6);
+    padding: 2px 6px;
+    border-radius: 2px;
+}
+main img {
+    width: 100%;
+}
+main img.pequeno {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+div.video {
+    background-color: var(--cor3);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 60%;
+    position: relative;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+aside {
+    background-color: rgb(202, 118, 235);
+    border-radius: 10px;
+    padding: 10px;
+}
+aside > h3 {
+    background-color: var(--cor5);
+    color: var(--cor1);
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 6px 6px 0px 0px;
+}
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+    padding: 4px;
+}
+/* Rodapé */
+footer {
+    background-color: var(--cor6);
+    color: var(--cor1);
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+footer > p > a {
+    color: var(--cor1);
+    font-weight: bolder;
+    text-decoration: none;
+}
+footer a:hover { 
+    text-decoration: underline;
+    color: var(--cor5);
+}
